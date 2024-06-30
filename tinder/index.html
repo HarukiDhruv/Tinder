@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .detailscontainer{
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.498));
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full h-screen bg-black font-['helvetica_now_display']" >
+       <div class="imagecontainer w-full h-screen relative overflow-hidden">
+        <div class="maincard z-[3] w-[130%] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[130%] " >
+            <img  class="w-full h-full object-cover" src="" alt="">
+        </div>
+        <div class="incomingcard z-[2] w-[130%] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  h-[130%] " >
+            <img  class="w-full h-full object-cover" src="" alt="">
+        </div>
+       </div>
+       <div class="absolute top-0 left-0 z-[4] w-full h-screen flex flex-col justify-between">
+       <div class="navbar  px-5 py-6  flex justify-between items-center text-white">
+          <div class="prflimg w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden ">
+            <img  class="w-full h-full object-cover"  src="" alt="">
+          </div>
+          <h3 class="capitalize text-2xl font-semibold tracking-tighter" >they liked you</h3>
+          <div class="chaticon relative flex items-center justify-center  rounded-full  w-[3.5rem] h-[3.5rem] bg-white/20">
+            <i class="text-2xl text-black ri-chat-1-fill"></i>
+            <div class="badge flex items-center justify-center rounded-full absolute top-0 right-0 -translate-y[5px] translate-x[3px] w-5 h-5 bg-red-700">
+                <h5 class="text-[10px] font-medium">5</h5>
+            </div>
+          </div>
+       </div>
+       <div class="details-container w-full"> 
+        <div class="details px-5 py-6 w-full">
+        <div class="element location flex gap-7">
+            <i class=" w-[1.6rem] h-[1.6rem] flex items-center justify-center  rounded-full bg-white font-semibold ri-corner-left-up-line"></i>
+            <h3 class="text-white">Los Angeles, CA</h3>
+        </div>
+        <div class="element name flex gap-7 text-white mt-1">
+            <h1 class="font-semibold tracking-tighter text-6xl">Andrew Garfield</h1>
+            <h1 class="font-semibold tracking-tighter text-4xl text-white opacity-80 ">39</h1>
+        </div>
+        <div class="element tags flex gap-3 mt-4">
+            <div class="tag flex items-center bg-white/30 px-3 py-1 rounded-full gap-3">
+                <i class=" text-3xl ri-spotify-fill"></i>
+                <h3 class="text-sm tracking-tighter text-white">Music</h3>
+            </div>
+            <!-- <div class="tag flex items-center bg-white/30 px-3 py-1 rounded-full gap-3">
+                <i class="ri-gamepad-fill"></i>
+                <h3 class="text-sm tracking-tighter text-white">Games</h3>
+            </div>
+            <div class="tag flex items-center bg-white/30 px-3 py-1 rounded-full gap-3">
+                <i class=" text-2xl ri-spotify-fill"></i>
+                <h3 class="text-sm tracking-tighter text-white">Music</h3>
+            </div> -->
+        </div>
+        <div class="element bio text-white/90 my-5">
+            <h3 class="text-xl">Bio</h3>
+            <p text-lg mt-3>I'm Andrew, an actor with a passion for storytelling and the arts. You might know me from films like "The Amazing Spider-Man" and "Hacksaw Ridge."</p>
+        </div>
+        <div class="element flex items-start mt-10 gap-1">
+            <button class="deny py-3 rounded-full w-1/2 bg-white">
+                <i class=" text-2xl ri-close-line"></i>
+            </button>
+            <button class="accept py-3 rounded-full w-1/2 bg-red-600">
+                <i class="text-2xl  ri-heart-3-fill"></i>
+            </button>
+        </div>
+       </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</body>
+</html>
